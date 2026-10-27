@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Body */
+body {
+    min-height: 100vh;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Form elements */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Remove default button border */
+button {
+    border: none;
+}
+
+/* Make hidden elements stay hidden */
+[hidden] {
+    display: none !important;
+}

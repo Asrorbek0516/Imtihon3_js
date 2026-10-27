@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
 
-    <link rel="stylesheet" href="./css/main.css">
+    <title>Where in the world?</title>
+
+    <!-- CSS fayllar -->
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-    
-    <div class="wrapper">
-        <div >
-            <img src="" alt="">
-            <h2>Iphone</h2>
-        </div>
-    </div>
 
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h1>Where in the world?</h1>
+
+        <button class="dark-mode" id="dark-mode" type="button">
+            ☾ Dark Mode
+        </button>
+    </header>
+
+    <main class="container">
+
+        <!-- Search va filter -->
+        <section class="filters">
+
+            <div class="search-box">
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search for a country..."
+                    autocomplete="off"
+                >
+            </div>
+
+            <select id="region-filter">
+                <option value="">Filter by Region</option>
+                <option value="Africa">Africa</option>
+                <option value="Americas">Americas</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+
+        </section>
+
+        <!-- Mamlakatlar shu yerda chiqariladi -->
+        <section class="countries" id="countries"></section>
+
+    </main>
 
     <script type="module" src="./js/app.js"></script>
+
 </body>
 </html>
